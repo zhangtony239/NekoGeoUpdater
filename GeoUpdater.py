@@ -25,7 +25,7 @@ def core_check(lock):
         print('核心锁定：sing-box')
         return '.db','https://github.com/lyc8503/sing-box-rules/releases/'
     elif lock == '0':
-        print('核心锁定：v2ray')
+        print('核心锁定：Xray')
         return '.dat','https://github.com/Loyalsoldier/v2ray-rules-dat/releases/'
     else:
         with open('config/groups/coreType','r') as file:
@@ -35,10 +35,10 @@ def core_check(lock):
             print('当前核心：sing-box')
             return '.db','https://github.com/lyc8503/sing-box-rules/releases/'
         elif core_type == '0':
-            print('当前核心：v2ray')
+            print('当前核心：Xray')
             return '.dat','https://github.com/Loyalsoldier/v2ray-rules-dat/releases/'
         
-(suffix,base_url) = core_check(lock='1') #非官方版必须设置：锁sing-box，设为1；锁v2ray，设为0。官方版留空自动同步Nekoray内的内核设置。
+(suffix,base_url) = core_check(lock='1') #非官方版必须设置：锁sing-box，设为1；锁Xray，设为0。官方版留空自动同步Nekoray内的内核设置。
 input('即将开始更新Geo文件，请确保网络连接正常，回车即可继续。')
 print('Geo文件更新开始，请勿中断程序……')
 if os.path.exists('geosite'+suffix):
