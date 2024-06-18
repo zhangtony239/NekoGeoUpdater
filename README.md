@@ -8,3 +8,5 @@
 ## 使用方法
 将python或exe版本塞入nekoray同目录，双击运行即可。<br/>
 由于fork版本的内核有变动，**exe请下载对应作者名称的zip。**
+
+NB4A同源方法：软件内更新源选择Loyalsoldier即可。
