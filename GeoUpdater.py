@@ -29,7 +29,7 @@ def core_check(lock):
             print('当前核心：Xray')
             return '.dat','https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/'
 
-(suffix,base_url) = core_check(lock='') #非官方版必须设置：锁sing-box，设为1；锁Xray，设为0。官方版留空自动同步Nekoray内的内核设置。
+(suffix,base_url) = core_check(lock='1') #非官方版必须设置：锁sing-box，设为1；锁Xray，设为0。官方版留空自动同步Nekoray内的内核设置。
 print('正在获取最新Geo文件...')
 try:
     geosite = download_file('geosite'+suffix)
