@@ -9,4 +9,6 @@
 将python或exe版本塞入nekoray同目录，双击运行即可。<br/>
 由于fork版本的内核有变动，**exe请下载对应作者名称的zip。**
 
-NekoBox for Android 同源方法：软件内更新源选择Loyalsoldier即可。
+## 更多内容
+1. NekoBox for Android 同源方法：软件内更新源选择Loyalsoldier即可。
+2. 由于Geo文件时效性，本更新器不考虑引入其他更新较慢的Geo源。
