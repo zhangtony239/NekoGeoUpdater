@@ -6,8 +6,7 @@
 感谢 https://github.com/Loyalsoldier/v2ray-rules-dat 提供Xray更新源。
 
 ## 使用方法
-将GeoUpdater.exe塞入nekoray同目录，双击运行即可。<br/>
-由于fork版本的内核有变动，**exe请下载对应作者名称的zip。**
+将GeoUpdater.exe塞入nekoray同目录，双击运行即可。
 
 ## 更多内容
 1. NekoBox for Android 同源方法：软件内更新源选择Loyalsoldier即可。
