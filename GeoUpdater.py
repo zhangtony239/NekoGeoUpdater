@@ -11,17 +11,6 @@ def download_file(filename):
                 file.write(data)
                 progress_bar.update(len(data))
 
-def core_check():
-    with open('config/groups/coreType','r') as file:
-        core_type = file.read()
-        file.close()
-    if core_type == '1':
-        print('当前核心：sing-box')
-        return '.db','https://github.com/lyc8503/sing-box-rules/releases/latest/download/'
-    elif core_type == '0':
-        print('当前核心：Xray')
-        return '.dat','https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/'
-    
 def init_proxies():
     with open('config/groups/nekobox.json') as file:
         port = str(json.load(file)["inbound_socks_port"])
@@ -29,7 +18,7 @@ def init_proxies():
     proxies = {'http': 'http://127.0.0.1:'+port, 'https': 'http://127.0.0.1:'+port}
     return proxies
 
-(suffix,base_url) = core_check()
+suffix,base_url = '.db','https://github.com/lyc8503/sing-box-rules/releases/latest/download/'
 proxies=init_proxies()
 print('正在获取最新Geo文件...')
 if os.path.exists('geosite'+suffix+'.download'):
