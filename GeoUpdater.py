@@ -3,13 +3,10 @@ from tqdm import tqdm
 
 def download_file(filename):
     url = base_url+filename
-    response = requests.get(url, proxies=proxies, stream=True)
-    total_size = int(response.headers.get('content-length', 0))
+    response = requests.get(url, proxies=proxies)
     with open(filename+'.download', 'wb') as file:
-        with tqdm(total=total_size, unit='iB', unit_scale=True, desc=filename) as progress_bar:
-            for data in response.iter_content(1024):
-                file.write(data)
-                progress_bar.update(len(data))
+        file.write(response.content)
+    bar.update(1)
 
 def init_proxies():
     with open('config/groups/nekobox.json') as file:
@@ -25,6 +22,7 @@ if os.path.exists('geosite'+suffix+'.download'):
     os.remove('geosite'+suffix+'.download')
 if os.path.exists('geoip'+suffix+'.download'):
     os.remove('geoip'+suffix+'.download')
+bar = tqdm(total=2)
 try:
     geosite = download_file('geosite'+suffix)
     geoip = download_file('geoip'+suffix)
