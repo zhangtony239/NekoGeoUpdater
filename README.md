@@ -17,3 +17,7 @@
 1. NekoBox for Android 同源方法：软件内更新源选择Loyalsoldier即可。
 2. 由于Geo文件时效性，本更新器不考虑引入其他更新较慢的Geo源。
 3. 转发公告：Nekobox for Android 务必关闭其play的自动更新，**play商店的版本已被污染！**
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=zhangtony239/NekoGeoUpdater&type=Date)](https://star-history.com/#zhangtony239/NekoGeoUpdater&Date)
