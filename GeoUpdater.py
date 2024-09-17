@@ -34,10 +34,15 @@ def download_file(args):
     chunk_size = 1024 * 1024  # 1MB
 
     with open(f'{filename}.download', 'wb') as file, \
-         tqdm(total=total_size+1, unit='B', unit_scale=True, desc=filename, position=position) as pbar:
+         tqdm(total=total_size, unit='B', unit_scale=True, desc=filename, position=position, leave=True) as pbar:
         for data in response.iter_content(chunk_size):
             file.write(data)
             pbar.update(len(data))
+
+def getpos():
+    global pos
+    pos = pos + 1
+    return pos
 
 # 初始化基本参数和会话
 base_url = 'https://github.com/lyc8503/sing-box-rules/releases/latest/download/'
