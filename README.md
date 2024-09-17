@@ -11,11 +11,11 @@
 感谢 https://github.com/Loyalsoldier/v2ray-rules-dat 提供Xray更新源。（v1.5及更早）
 
 ## Windows使用方法
-最新版：将GeoUpdater.py和GeoUpdate.bat塞入nekoray同目录，双击运行GeoUpdate.bat即可。<br/>
+最新版：将GeoUpdater.py和GeoUpdate.bat塞入nekoray同目录，双击运行**GeoUpdate.bat**即可。<br/>
 v1.5及更早：将GeoUpdater.exe塞入nekoray同目录，双击运行即可。
 
 ## Linux、MacOS使用方法
-最新版：将GeoUpdater.py塞入nekoray同目录，双击运行GeoUpdate.py即可。<br/>
+最新版：将GeoUpdater.py塞入nekoray同目录，双击运行**GeoUpdate.py**即可。<br/>
 v1.5及更早：一样的操作，自己翻仓库历史快照下py即可。
 
 ## 更多内容
