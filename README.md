@@ -26,3 +26,8 @@ v1.5及更早：一样的操作，自己翻仓库历史快照下载对应老版�
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=zhangtony239/NekoGeoUpdater&type=Date)](https://star-history.com/#zhangtony239/NekoGeoUpdater&Date)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fzhangtony239%2FNekoGeoUpdater.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fzhangtony239%2FNekoGeoUpdater?ref=badge_shield)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fzhangtony239%2FNekoGeoUpdater.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fzhangtony239%2FNekoGeoUpdater?ref=badge_large)
