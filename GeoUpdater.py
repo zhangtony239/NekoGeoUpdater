@@ -31,10 +31,10 @@ def download_file(args):
     url = base_url + filename
     response = session.get(url, stream=True)
     total_size = int(response.headers.get('content-length', 0))+1
-    chunk_size = 1024 * 1024  # 1MB
+    chunk_size = 1024 * 1024
 
     with open(f'{filename}.download', 'wb') as file, \
-         tqdm(total=total_size, unit='B', unit_scale=True, desc=filename, position=position, leave=True) as pbar:
+         tqdm(total=total_size, unit='B', unit_scale=True, desc=filename, dynamic_ncols=True, position=position, leave=True) as pbar:
         for data in response.iter_content(chunk_size):
             file.write(data)
             pbar.update(len(data))
