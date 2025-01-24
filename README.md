@@ -24,7 +24,3 @@ v1.5及更早：一样的操作，自己翻仓库历史快照下载对应老版�
 2. 由于Geo文件时效性，本更新器不考虑引入其他更新较慢的Geo源。
 3. 转发公告：Nekobox for Android 务必关闭其play的自动更新，**play商店的版本已被污染！**
 4. Nekobox电脑版本原名Nekoray。
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=zhangtony239/NekoGeoUpdater&type=Date)](https://star-history.com/#zhangtony239/NekoGeoUpdater&Date)
