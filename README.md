@@ -20,9 +20,9 @@ v1.5及更早：将GeoUpdater.exe塞入nekoray同目录，双击运行即可。
 v1.5及更早：一样的操作，自己翻仓库历史快照下载对应老版本。
 
 ## 更多内容
-2. NekoBox for Android 同源方法：软件内更新源选择Loyalsoldier。
-3. 由于Geo文件时效性，本更新器不考虑引入其他更新较慢的Geo源。
-4. 转发公告：Nekobox for Android 务必关闭其play的自动更新，**play商店的版本已被污染！**
+1. NekoBox for Android 同源方法：软件内更新源选择Loyalsoldier。
+2. 由于Geo文件时效性，本更新器不考虑引入其他更新较慢的Geo源。
+3. 转发公告：Nekobox for Android 务必关闭其play的自动更新，**play商店的版本已被污染！**
 
 ## Star History
 
