@@ -24,11 +24,10 @@ def GetGeoVer(session):
 def StartDownload(filename):
     response = session.get(base_url+filename, stream=True)
     with open(filename+'.download', 'wb') as file:
-        for chunk in tqdm(response.iter_content(chunk_size=1024),total=int(response.headers['content-length'])//1024,unit='KB',desc=filename,leave=False):
+        for chunk in tqdm(response.iter_content(chunk_size=1024),total=int(response.headers['content-length'])//1024,unit='KB',desc=filename,leave=True):
             file.write(chunk)
         file.flush()
         file.close()
-        tqdm.write(filename+': Done.')
 
 base_url = 'https://github.com/lyc8503/sing-box-rules/releases/latest/download/'
 session = requests.Session()
@@ -42,7 +41,6 @@ try:
         os.remove('geoip.db.download')
     with ThreadPool(max_workers=2) as executor:
         executor.map(StartDownload, ['geosite.db', 'geoip.db'])
-        time.sleep(0.1)
 
 except requests.exceptions.RequestException as e:
     print('更新失败，请检查网络连接和代理设置。')
