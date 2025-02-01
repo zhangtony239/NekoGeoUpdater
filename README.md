@@ -5,7 +5,7 @@
 
 | GeoUpdater版本|Nekobox版本|
 | --- | --- |
-|v2.2|v4.0-beta3|
+|v2.2|v4.0.1|
 |v1.5|v3.26|
 
 感谢 https://github.com/lyc8503/sing-box-rules 提供sing-box更新源。<br/>
