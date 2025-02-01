@@ -31,9 +31,8 @@ def StartDownload(filename):
         tqdm.write(filename+': Done.')
 
 base_url = 'https://github.com/lyc8503/sing-box-rules/releases/latest/download/'
-proxies = GetProxyCfg()
 session = requests.Session()
-session.proxies = proxies
+session.proxies = GetProxyCfg()
 
 try:
     print('正在获取最新Geo文件：'+str(GetGeoVer(session)))
