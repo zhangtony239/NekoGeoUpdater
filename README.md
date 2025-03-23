@@ -1,3 +1,5 @@
+# 本项目已随Nekobox停止维护，仅供学术交流。
+
 ## GeoUpdater for Nekobox [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fzhangtony239%2FNekoGeoUpdater.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fzhangtony239%2FNekoGeoUpdater?ref=badge_shield&issueType=security)
 
 这是一个用Python写的Geo更新脚本，会自动下载最新版的Geoip.db和Gepsite.db到文件的相同目录下。<br/>
